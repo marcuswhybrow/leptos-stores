@@ -46,7 +46,7 @@ pub fn App() -> impl IntoView {
 /// Each item renders a "Delete" button to remove itself from the Store. One could pass the Store
 /// itself to the component and update the Signal there. But this scatters Signal writes across
 /// your application, making the reactivity decision tree hard to reason about, leading to
-/// convoluted debugging of any emerging errors accessing disposal signals.
+/// convoluted debugging of any emerging errors accessing disposed signals.
 ///
 /// I've found it preferable to only pass read-only state down in components, and callbacks
 /// to requests state changes from some some higher level, centralised place.
